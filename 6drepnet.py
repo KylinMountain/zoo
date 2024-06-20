@@ -27,11 +27,11 @@ def preprocess_image(image_path):
 
 
 # 加载 ONNX 模型
-onnx_model_path = "/Users/xxxx/Documents/models/sixdrepnet360_Nx3x224x224.onnx"
+onnx_model_path = "./models/sixdrepnet360_Nx3x224x224.onnx"
 ort_session = ort.InferenceSession(onnx_model_path)
 
 # 预处理图像
-image_path = "/Users/xxxx/Downloads/falseindex4.jpeg"
+image_path = "./images/falseindex4.jpeg"
 input_data = preprocess_image(image_path)
 
 # 获取模型输入的名字
